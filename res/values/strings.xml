@@ -1,5 +1,12 @@
 <resources>
 
     <string name="app_name">Kmera</string>
-
+	
+    <!-- camera.xml -->
+    <string name="take_picture">Capturar foto</string>
+    <string name="show_picture">Exibir foto</string>
+    
+    <!-- main.xml -->
+    <string name="camera">Câmera</string>
+    
 </resources>
