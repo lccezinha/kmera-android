@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class CameraActivity extends Activity {
 	private static final int TAKE_PICTURE = 1;
+	private static final int TAKE_VIDEO = 2;
 	private Uri uri;
 	
 	@Override
@@ -41,25 +42,61 @@ public class CameraActivity extends Activity {
 	public void showPicture(View view){
 		Intent intent = new Intent(Intent.ACTION_VIEW);
 		intent.setDataAndType(uri, "image/jpeg");
+		
+		startActivity(intent);
+	}
+	
+	public void takeVideo(View view){
+		Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
+		intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, 1);
+		intent.putExtra(MediaStore.EXTRA_DURATION_LIMIT, 5);
+		
+		startActivityForResult(intent, TAKE_VIDEO);
+	}
+	
+	public void showVideo(View view){
+		Intent intent = new Intent(Intent.ACTION_VIEW);
+		intent.setDataAndType(uri, "video/mp4");
+		
 		startActivity(intent);
 	}
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data){
-		if(requestCode == TAKE_PICTURE){
-			if(resultCode == RESULT_OK){
-				showMessage("Imagem capturada!");
-				addImageToGallery();
-			}else{
-				showMessage("Imagem não capturada!");
-			}
+		switch (requestCode) {
+		case TAKE_PICTURE:
+			executeCamera(resultCode);
+			break;
+
+		case TAKE_VIDEO:
+			executeVideo(resultCode, data);
+			break;
+		}
+	}
+	
+	private void executeCamera(int resultCode){
+		if(resultCode == RESULT_OK){
+			showMessage(getResources().getString(R.string.create_image_success));
+			addImageToGallery();
+		}else{
+			showMessage(getResources().getString(R.string.create_image_error));
+		}
+	}
+	
+	private void executeVideo(int resultCode, Intent data){
+		if(resultCode == RESULT_OK){
+			String message = getResources()
+					.getString(R.string.create_video_success) + data.getDataString();
+			showMessage(message);
+			
+			uri = data.getData();
+		}else{
+			showMessage(getResources().getString(R.string.create_video_error));
 		}
 	}
 	
 	private boolean cameraPresent(){
-		boolean cameraPresent = getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA);
-		
-		return cameraPresent;
+		return getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA);
 	}
 	
 	private File getDirectory(){
@@ -81,6 +118,4 @@ public class CameraActivity extends Activity {
 	private void showMessage(String message){
 		Toast.makeText(this, message, Toast.LENGTH_LONG).show();
 	}
-	
-	
 }

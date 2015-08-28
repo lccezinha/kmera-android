@@ -15,5 +15,17 @@
         android:layout_height="wrap_content"
         android:text="@string/show_picture"
         android:onClick="showPicture" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/take_video"
+        android:onClick="takeVideo" />
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_video"
+        android:onClick="showVideo" />
 
 </LinearLayout>

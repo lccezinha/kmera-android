@@ -1,12 +1,13 @@
 <resources>
-
     <string name="app_name">Kmera</string>
 	
     <!-- camera.xml -->
-    <string name="take_picture">Capturar foto</string>
-    <string name="show_picture">Exibir foto</string>
+    <string name="take_picture">Capturar Foto</string>
+    <string name="show_picture">Exibir Foto</string>
+   
+    <string name="take_video">Capturar Vídeo</string>
+    <string name="show_video">Exibir Vídeo</string>
     
     <!-- main.xml -->
     <string name="camera">Câmera</string>
-    
 </resources>
