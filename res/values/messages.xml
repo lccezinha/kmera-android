@@ -1,0 +1,7 @@
+<resources>
+    <string name="create_image_success">Imagem capturada com sucesso</string>
+    <string name="create_image_error">Imagem não capturada! :(</string>
+    
+    <string name="create_video_success">Vídeo gravado em: </string>
+    <string name="create_video_error">Vídeo não gravado! :(</string>
+</resources>

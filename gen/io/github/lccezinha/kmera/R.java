@@ -21,14 +21,20 @@ public final class R {
         public static final int main=0x7f030001;
     }
     public static final class string {
-        public static final int app_name=0x7f040000;
+        public static final int app_name=0x7f040004;
         /**  main.xml 
          */
-        public static final int camera=0x7f040003;
-        public static final int show_picture=0x7f040002;
+        public static final int camera=0x7f040009;
+        public static final int create_image_error=0x7f040001;
+        public static final int create_image_success=0x7f040000;
+        public static final int create_video_error=0x7f040003;
+        public static final int create_video_success=0x7f040002;
+        public static final int show_picture=0x7f040006;
+        public static final int show_video=0x7f040008;
         /**  camera.xml 
          */
-        public static final int take_picture=0x7f040001;
+        public static final int take_picture=0x7f040005;
+        public static final int take_video=0x7f040007;
     }
     public static final class style {
         /** 
