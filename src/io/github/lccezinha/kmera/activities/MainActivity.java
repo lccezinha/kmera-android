@@ -15,10 +15,19 @@ public class MainActivity extends Activity {
 	}
 	
 	public void selectOption(View view){
-		if(view.getId() == R.id.camera){
-			Intent intent = new Intent(this, CameraActivity.class);
-			startActivity(intent);
+		Intent intent = null;
+		
+		switch (view.getId()) {
+		case R.id.camera:
+			intent = new Intent(this, CameraActivity.class);
+			break;
+
+		case R.id.media_player:
+			intent = new Intent(this, MediaPlayerActivity.class);
+			break;
 		}
+		
+		startActivity(intent);
 	}
 	
 }

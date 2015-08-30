@@ -26,6 +26,7 @@
         </activity>
         
         <activity android:name="io.github.lccezinha.kmera.activities.CameraActivity"></activity>
+        <activity android:name="io.github.lccezinha.kmera.activities.MediaPlayerActivity"></activity>
     </application>
 
 </manifest>
