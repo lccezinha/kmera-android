@@ -4,6 +4,7 @@ import io.github.lccezinha.kmera.R;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends Activity {
@@ -15,19 +16,16 @@ public class MainActivity extends Activity {
 	}
 	
 	public void selectOption(View view){
-		Intent intent = null;
+		Log.e("Main", view.getId() + "");
 		
 		switch (view.getId()) {
 		case R.id.camera:
-			intent = new Intent(this, CameraActivity.class);
+			startActivity(new Intent(this, CameraActivity.class));
 			break;
 
 		case R.id.media_player:
-			intent = new Intent(this, MediaPlayerActivity.class);
+			startActivity(new Intent(this, MediaPlayerActivity.class));
 			break;
 		}
-		
-		startActivity(intent);
-	}
-	
+	}	
 }
