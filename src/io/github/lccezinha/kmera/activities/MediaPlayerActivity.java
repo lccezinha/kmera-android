@@ -9,16 +9,30 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class MediaPlayerActivity extends Activity
 		implements OnPreparedListener {
 	
 	private MediaPlayer mediaPlayer;
+	private VideoView videoView;
 	
 	public void onCreate(Bundle savedInstanceState){
 		Log.e("Dentro do MediaPlayer", "WTF ?");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.media_player);
+		videoView = (VideoView) findViewById(R.id.videoView);
+	}
+	
+	public void executeVideo(View view){
+		String urlVideo = "android.resource://" + getPackageName() + "/" + R.raw.videord;
+		Uri uri = Uri.parse(urlVideo);
+		
+		videoView.setVideoURI(uri);
+		MediaController mediaController = new MediaController(this);
+		videoView.setMediaController(mediaController);
+		videoView.start();		
 	}
 	
 	public void executeMusicFromFile(View view){
