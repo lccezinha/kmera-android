@@ -7,7 +7,8 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="22" />
 
-    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" />
     
     <application
         android:allowBackup="true"
@@ -26,6 +27,7 @@
         </activity>
         
         <activity android:name="io.github.lccezinha.kmera.activities.CameraActivity"></activity>
+        <activity android:name="io.github.lccezinha.kmera.activities.MediaPlayerActivity"></activity>
     </application>
 
 </manifest>

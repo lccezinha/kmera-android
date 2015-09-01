@@ -10,4 +10,13 @@
     
     <!-- main.xml -->
     <string name="camera">Câmera</string>
+    <string name="media_player">Player</string>
+    
+    <!-- media_player.xml -->
+    <string name="execute_music_from_file">Executar música do arquivo</string>
+    <string name="execute_music_from_url">Executar música de URL</string>
+    <string name="execute_video">Executar Vídeo</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="play">PLAY!</string>
 </resources>

@@ -15,10 +15,13 @@ public final class R {
     }
     public static final class id {
         public static final int camera=0x7f060000;
+        public static final int mediaPlayer=0x7f060001;
+        public static final int videoView=0x7f060002;
     }
     public static final class layout {
         public static final int camera=0x7f030000;
         public static final int main=0x7f030001;
+        public static final int media_player=0x7f030002;
     }
     public static final class string {
         public static final int app_name=0x7f040004;
@@ -29,8 +32,17 @@ public final class R {
         public static final int create_image_success=0x7f040000;
         public static final int create_video_error=0x7f040003;
         public static final int create_video_success=0x7f040002;
+        /**  media_player.xml 
+         */
+        public static final int execute_music_from_file=0x7f04000b;
+        public static final int execute_music_from_url=0x7f04000c;
+        public static final int execute_video=0x7f04000d;
+        public static final int media_player=0x7f04000a;
+        public static final int pause=0x7f04000f;
+        public static final int play=0x7f040010;
         public static final int show_picture=0x7f040006;
         public static final int show_video=0x7f040008;
+        public static final int stop=0x7f04000e;
         /**  camera.xml 
          */
         public static final int take_picture=0x7f040005;

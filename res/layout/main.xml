@@ -11,4 +11,11 @@
         android:onClick="selectOption"
         android:text="@string/camera" />
     
+    <Button 
+        android:id="@+id/mediaPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectOption"
+        android:text="@string/media_player" />
+    
 </LinearLayout>
