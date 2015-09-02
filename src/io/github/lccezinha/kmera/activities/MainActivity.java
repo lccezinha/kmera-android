@@ -3,6 +3,7 @@ package io.github.lccezinha.kmera.activities;
 import io.github.lccezinha.kmera.R;
 import android.app.Activity;
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,16 +19,6 @@ public class MainActivity extends Activity {
 	public void selectOption(View view){
 		Log.e("Main", view.getId() + "");
 		
-//		if(view.getId() == R.id.camera){
-//			Intent intent = new Intent(this, CameraActivity.class);
-//			startActivity(intent);
-//		}
-//		
-//		if(view.getId() == R.id.mediaPlayer){
-//			Intent intent = new Intent(this, MediaPlayerActivity.class);
-//			startActivity(intent);
-//		}
-		
 		switch (view.getId()) {
 		case R.id.camera:
 			startActivity(new Intent(this, CameraActivity.class));
@@ -36,6 +27,9 @@ public class MainActivity extends Activity {
 		case R.id.mediaPlayer:
 			startActivity(new Intent(this, MediaPlayerActivity.class));
 			break;
+			
+		case R.id.location:
+			startActivity(new Intent(this, LocationActivity.class));
 		}
 	}	
 }
