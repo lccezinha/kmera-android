@@ -18,4 +18,11 @@
         android:onClick="selectOption"
         android:text="@string/media_player" />
     
+    <Button 
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectOption"
+        android:text="@string/location" />
+    
 </LinearLayout>

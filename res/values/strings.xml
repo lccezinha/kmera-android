@@ -11,6 +11,7 @@
     <!-- main.xml -->
     <string name="camera">Câmera</string>
     <string name="media_player">Player</string>
+    <string name="location">Localização</string>
     
     <!-- media_player.xml -->
     <string name="execute_music_from_file">Executar música do arquivo</string>
@@ -19,4 +20,9 @@
     <string name="stop">Stop</string>
     <string name="pause">Pause</string>
     <string name="play">PLAY!</string>
+    
+    <!-- location.xml -->
+    <string name="provider">Provider</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
 </resources>

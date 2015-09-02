@@ -14,39 +14,55 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int camera=0x7f060000;
-        public static final int mediaPlayer=0x7f060001;
-        public static final int videoView=0x7f060002;
+        public static final int camera=0x7f070004;
+        public static final int latitude=0x7f070001;
+        public static final int location=0x7f070006;
+        public static final int longitude=0x7f070002;
+        public static final int map=0x7f070003;
+        public static final int mediaPlayer=0x7f070005;
+        public static final int provider=0x7f070000;
+        public static final int videoView=0x7f070007;
     }
     public static final class layout {
         public static final int camera=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int media_player=0x7f030002;
+        public static final int location=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int media_player=0x7f030003;
+    }
+    public static final class raw {
+        public static final int megadeth=0x7f040000;
+        public static final int videord=0x7f040001;
     }
     public static final class string {
-        public static final int app_name=0x7f040004;
+        public static final int app_name=0x7f050004;
         /**  main.xml 
          */
-        public static final int camera=0x7f040009;
-        public static final int create_image_error=0x7f040001;
-        public static final int create_image_success=0x7f040000;
-        public static final int create_video_error=0x7f040003;
-        public static final int create_video_success=0x7f040002;
+        public static final int camera=0x7f050009;
+        public static final int create_image_error=0x7f050001;
+        public static final int create_image_success=0x7f050000;
+        public static final int create_video_error=0x7f050003;
+        public static final int create_video_success=0x7f050002;
         /**  media_player.xml 
          */
-        public static final int execute_music_from_file=0x7f04000b;
-        public static final int execute_music_from_url=0x7f04000c;
-        public static final int execute_video=0x7f04000d;
-        public static final int media_player=0x7f04000a;
-        public static final int pause=0x7f04000f;
-        public static final int play=0x7f040010;
-        public static final int show_picture=0x7f040006;
-        public static final int show_video=0x7f040008;
-        public static final int stop=0x7f04000e;
+        public static final int execute_music_from_file=0x7f05000c;
+        public static final int execute_music_from_url=0x7f05000d;
+        public static final int execute_video=0x7f05000e;
+        public static final int latitude=0x7f050013;
+        public static final int location=0x7f05000b;
+        public static final int longitude=0x7f050014;
+        public static final int media_player=0x7f05000a;
+        public static final int pause=0x7f050010;
+        public static final int play=0x7f050011;
+        /**  location.xml 
+         */
+        public static final int provider=0x7f050012;
+        public static final int show_picture=0x7f050006;
+        public static final int show_video=0x7f050008;
+        public static final int stop=0x7f05000f;
         /**  camera.xml 
          */
-        public static final int take_picture=0x7f040005;
-        public static final int take_video=0x7f040007;
+        public static final int take_picture=0x7f050005;
+        public static final int take_video=0x7f050007;
     }
     public static final class style {
         /** 
@@ -70,10 +86,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppBaseTheme=0x7f060000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f050001;
+        public static final int AppTheme=0x7f060001;
     }
 }
